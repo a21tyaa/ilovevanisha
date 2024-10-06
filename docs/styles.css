@@ -1,0 +1,88 @@
+/* Apply beautiful fonts */
+body {
+    font-family: 'Literata', serif; /* Changed font family to Literata */
+    background-color: #f7e8e8;
+    margin: 0;
+    padding: 0;
+}
+
+/* Love meter positioning and style */
+#love-meter {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 10px 20px;
+    background-color: pink;
+    border-radius: 10px;
+    font-size: 22px;
+    font-family: 'Great Vibes', cursive;
+    cursor: pointer;
+}
+
+/* Countdown timer styling */
+#countdown {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: lightblue;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* "Do you love me?" text styling */
+#love-question {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the text horizontally and vertically */
+    font-size: 24px;
+    font-family: 'Great Vibes', cursive;
+    color: #ff1493;
+}
+
+/* Styling for Yes and No buttons */
+#buttons {
+    position: absolute;
+    top: 65%; /* Position buttons below the question */
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex; /* Arrange buttons horizontally */
+    justify-content: center; /* Center buttons within the container */
+}
+
+.rounded-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 50px;
+    font-size: 18px;
+    cursor: pointer;
+    margin: 0 10px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+}
+
+.rounded-button:hover {
+    background-color: #98fb98;
+}
+
+/* Make the No button move away on hover */
+#no-btn {
+    position: relative;
+    transition: all 0.2s ease-in-out;
+}
+
+#no-btn:hover {
+    transform: translateX(150px);
+}
+
+/* Apply the requested styles to the Yes and No buttons */
+#yes-btn {
+    background-color: green; 
+    color: white;
+}
+
+#no-btn {
+    background-color: red;
+    color: white;
+}
