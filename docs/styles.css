@@ -1,6 +1,6 @@
 /* Apply beautiful fonts */
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Literata', serif; /* Changed font family to Literata */
     background-color: #f7e8e8;
     margin: 0;
     padding: 0;
@@ -34,9 +34,9 @@ body {
 /* "Do you love me?" text styling */
 #love-question {
     position: absolute;
-    bottom: 100px;
+    top: 50%;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translate(-50%, -50%); /* Center the text horizontally and vertically */
     font-size: 24px;
     font-family: 'Great Vibes', cursive;
     color: #ff1493;
@@ -45,14 +45,15 @@ body {
 /* Styling for Yes and No buttons */
 #buttons {
     position: absolute;
-    bottom: 20px;
+    top: 65%; /* Position buttons below the question */
     left: 50%;
     transform: translateX(-50%);
+    display: flex; /* Arrange buttons horizontally */
+    justify-content: center; /* Center buttons within the container */
 }
 
 .rounded-button {
     padding: 10px 20px;
-    background-color: lightgreen;
     border: none;
     border-radius: 50px;
     font-size: 18px;
