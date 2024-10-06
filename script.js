@@ -1,24 +1,16 @@
-const noBtn = document.getElementById('no-btn');
-const yesBtn = document.getElementById('yes-btn');
-const celebrationMessage = document.getElementById('celebration-message');
-
-// Function to create fireworks
-function createFireworks() {
-    for (let i = 0; i < 5; i++) {
-        const firework = document.createElement('div');
-        firework.className = 'firework';
-        document.body.appendChild(firework);
-    }
+// Love Meter Function
+function showLoveMeter() {
+    document.getElementById('meter-display').classList.remove('meter-hidden');
+    document.getElementById('meter-display').classList.add('meter-visible');
 }
 
-noBtn.addEventListener('mouseover', () => {
-    const newX = Math.random() * (window.innerWidth - noBtn.offsetWidth);
-    const newY = Math.random() * (window.innerHeight - noBtn.offsetHeight);
-    noBtn.style.left = `${newX}px`;
-    noBtn.style.top = `${newY}px`;
-});
+// Countdown since you started talking
+function calculateDays() {
+    const startDate = new Date("July 25, 2023");
+    const currentDate = new Date();
+    const timeDiff = currentDate - startDate;
+    const daysDiff = Math.floor(timeDiff / (1000 * 60 * 60 * 24));
+    document.getElementById('days-count').textContent = daysDiff;
+}
 
-yesBtn.addEventListener('click', () => {
-    celebrationMessage.classList.remove('hidden');
-    createFireworks(); // Call the fireworks function
-});
+calculateDays();
