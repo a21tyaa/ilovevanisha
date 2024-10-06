@@ -1,71 +1,48 @@
-/* Background Color */
 body {
-    background-color: lightpink;
-    font-family: 'Dancing Script', cursive; /* Beautiful font from Google Fonts */
-    color: #ff69b4; /* Font color matching the background */
-    cursor: url('heart-cursor.png'), auto; /* Custom heart cursor */
+    background-color: #ffe6f2;
+    font-family: 'Arial', sans-serif;
     text-align: center;
+    position: relative;
 }
 
-/* Blurred Background Text */
 .background-text {
-    font-size: 80px;
-    color: rgba(255, 182, 193, 0.2); /* Light pink, transparent */
-    position: absolute;
+    position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    font-size: 100px;
+    color: rgba(255, 182, 193, 0.2); /* Light pink, transparent */
+    font-weight: bold;
     z-index: -1; /* Behind everything */
-    filter: blur(5px); /* Blurring effect */
-    text-transform: uppercase;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-/* Hover Areas */
-.hover-area {
+h1 {
+    color: #ff66b2;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 18px;
     margin: 20px;
-    font-size: 24px;
-    position: relative;
-    display: inline-block;
+    cursor: pointer;
 }
 
-.hover-message {
-    display: none;
-    font-size: 20px;
-    color: #f08080; /* Beautiful pink tone */
+#yes-btn {
+    background-color: #ff99cc;
+}
+
+#no-btn {
+    background-color: #ff6666;
     position: absolute;
-    top: 30px;
-    left: 0;
-    white-space: nowrap;
+    right: 20%;
 }
 
-.hover-area:hover .hover-message {
-    display: block;
-    animation: fadeIn 1s ease-in;
-}
-
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
-}
-
-/* Love Meter */
-.love-meter {
-    margin: 40px;
-}
-
-.meter-hidden {
-    display: none;
-    font-size: 28px;
-    color: #ff1493;
-    margin-top: 20px;
-}
-
-.meter-visible {
-    display: block;
-}
-
-/* Countdown */
 .countdown {
-    margin: 40px;
-    font-size: 28px;
+    margin-top: 50px;
+    font-size: 18px;
+}
+
+#countdown-timer {
+    font-weight: bold;
 }
