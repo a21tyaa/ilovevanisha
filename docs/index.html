@@ -3,39 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Do you love me?</title>
+    <title>Do You Love Me?</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Blurred Background Text -->
-    <div class="background-text">I love Vanisha</div>
-
-    <!-- Special Notes with Hover -->
-    <div class="hover-area">
-        Hover here! 🌸
-        <div class="hover-message">You're the most amazing person! 💕</div>
-    </div>
-    <div class="hover-area">
-        Hover over me! 🍓
-        <div class="hover-message">You make my world brighter! 🌟</div>
+    <!-- Blurred "I Love Vanisha" in the background -->
+    <div class="background-text">
+        I LOVE VANISHA
     </div>
 
-    <!-- Love Meter -->
-    <div class="love-meter">
-        <button onclick="showLoveMeter()">Click to see how much I love you</button>
-        <div id="meter-display" class="meter-hidden">100% Love! 💖</div>
+    <!-- Main Content -->
+    <div class="content">
+        <h1>Do you love me?</h1>
+        <button id="yes-btn">Yes</button>
+        <button id="no-btn">No</button>
     </div>
 
     <!-- Countdown -->
     <div class="countdown">
-        We've been talking for <span id="days-count"></span> days! 🌻
+        <p>Days since we started talking: <span id="countdown-timer"></span></p>
     </div>
-
-    <!-- Audio for Mitski's song -->
-    <audio autoplay loop>
-        <source src="mitski-i-bet-on-losing-dogs.mp3" type="audio/mpeg">
-        Your browser does not support the audio element.
-    </audio>
 
     <script src="script.js"></script>
 </body>
