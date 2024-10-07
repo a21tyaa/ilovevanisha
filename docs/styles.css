@@ -1,0 +1,71 @@
+/* Import the Google font "Literata" */
+@import url('https://fonts.googleapis.com/css2?family=Literata&display=swap');
+
+/* Apply beautiful fonts */
+body {
+    font-family: 'Literata', serif;
+    background-color: #ffe4e1; /* Light pink background */
+    margin: 0;
+    padding: 0;
+}
+
+/* Center the "Do you love me?" text and buttons */
+#love-question {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 32px;
+    font-family: 'Great Vibes', cursive;
+    color: #ff1493;
+}
+
+/* Yes and No buttons */
+#buttons {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Yes button */
+#yes-btn {
+    background-color: green;
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 50px;
+    cursor: pointer;
+    margin: 0 10px;
+    border: none;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+}
+
+#yes-btn::after {
+    content: ' 😊';
+}
+
+/* No button */
+#no-btn {
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 50px;
+    cursor: pointer;
+    margin: 0 10px;
+    border: none;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+}
+
+#no-btn::after {
+    content: ' 😡';
+}
+
+/* Move the No button randomly around the screen on hover */
+#no-btn:hover {
+    position: absolute;
+    top: calc(40% + 200px * (Math.random() - 0.5));
+    left: calc(50% + 200px * (Math.random() - 0.5));
+    transition: all 0.2s ease-in-out;
+}
